@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
     <style>
         .hero-bg {
             background: linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(79, 70, 229, 0.85) 100%);
@@ -35,10 +35,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <i data-feather="globe" class="h-8 w-8 text-blue-600"></i>
-                        <span class="ml-2 text-xl font-bold text-gray-900">InboxConsultingServices</span>
-                    </div>
+                    <div class="flex-shrink-0 flex items-center">                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-auto" viewBox="0 0 350 50" role="img" aria-labelledby="logoTitle">
+                            <title id="logoTitle">Inbox Consulting Services Logo</title>
+                            <!-- Envelope Icon -->
+                            <g transform="translate(0, 5)">
+                                <path d="M0 0 L25 15 L50 0 M0 0 L0 30 L25 15 M50 0 L50 30 L25 15" fill="none" stroke="white" stroke-width="2"/>
+                                <rect x="10" y="10" width="30" height="20" fill="#EF4444"/>
+                                <line x1="15" y1="15" x2="35" y2="15" stroke="white" stroke-width="2"/>
+                                <line x1="15" y1="25" x2="35" y2="25" stroke="white" stroke-width="2"/>
+                            </g>
+                            <!-- Text -->
+                            <text x="60" y="25" font-family="system-ui" font-size="18" font-weight="bold">
+                                <tspan fill="#EF4444">Inbox</tspan>
+                                <tspan x="60" y="45" fill="white" font-size="14">Consulting Services</tspan>
+                            </text>
+                        </svg>                    </div>
                 </div>
                 <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
                     <a href="#" class="text-blue-600 font-medium px-3 py-2">Home</a>
@@ -80,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div id="vanta-globe" class="absolute inset-0"></div>
+
     </div>
 
     <!-- Trust Indicators -->
@@ -431,11 +442,11 @@
                     <ul class="space-y-2">
                         <li class="flex items-center text-gray-400">
                             <i data-feather="mail" class="h-4 w-4 mr-2"></i>
-                            <a href="mailto:info@InboxConsultingServices.com" class="text-gray-400 hover:text-white">info@InboxConsultingServices.com</a>
+                            <a href="mailto:info@inboxconsultingservices.com">info@inboxconsultingservices.com</a>
                         </li>
                         <li class="flex items-center text-gray-400">
                             <i data-feather="phone" class="h-4 w-4 mr-2"></i>
-                            <a href="https://wa.me/9866309921" class="text-gray-400 hover:text-white">9779866309921</a>
+                            <a href="https://wa.me/9779866309921">9866309921</a>
                         </li>
                         <li class="flex items-center text-gray-400">
                             <i data-feather="map-pin" class="h-4 w-4 mr-2"></i>
@@ -470,19 +481,7 @@
         
         feather.replace();
         
-        VANTA.GLOBE({
-            el: "#vanta-globe",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3b82f6,
-            backgroundColor: 0x2563eb,
-            size: 0.8
-        });
+
     </script>
 </body>
 </html>
